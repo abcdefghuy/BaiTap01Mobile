@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:gravity="center">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/studentImage"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center"
+            android:src="@drawable/avatar"
+            app:civ_border_color="@android:color/black"
+            app:civ_border_width="2dp"
+            tools:srcCompat="@tools:sample/avatars[4]" />
+
+        <TextView
+            android:id="@+id/studentInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:text="Nguyễn Sang Huy"
+            android:textSize="16sp" />
+        <TextView
+            android:id="@+id/universityInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:text="Sinh viên khoa CNTT - ĐHSPKTHCM"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btnBai4"
+            android:layout_width="103dp"
+            android:layout_height="wrap_content"
+            android:text="Bai 4" />
+
+        <Button
+            android:id="@+id/btnBai5"
+            android:layout_width="105dp"
+            android:layout_height="wrap_content"
+            android:text="Bai 5" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
